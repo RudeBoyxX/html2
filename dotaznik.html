@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 1</title>
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+      <nav>
+        <ul>
+          <li><a href="index.html">O mne</a></li>
+          <li><a href="rozvrh.html">Rozvrh</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="dotaznik.html">Dotazník</a></li>
+        </ul>
+      </nav>
+      <h1>Dotazník</h1>
+      <section class="table">
+            <article>
+              <h3>Šport</h3>
+              <form action="mailto:matusbubeliny@gmail.com" onsubmit="return overDotaznik()" method="post" enctype="text/plain" id="form">
+              <input type="hidden" name="meno_student" value="Matúš Bubelíny">
+              <p>
+              <label for="meno">Meno:</label><input name="meno" type="text" onblur="overMeno()" placeholder="Zadajte meno" id="meno" ><br>
+              <label for="priezvisko">Priezvisko:</label><input name="priezvisko" type="text" onblur="overPriezisko()" placeholder="Zadajte priezvisko" id="priezvisko" ><br>
+              <label for="email">Email:</label><input name="email" type="text" required value="@" onblur="overEmail()" id="email"><br>
+              </p>
+
+              <p>
+              <label for="narodenie">Dátum narodenia</label><input name="narodenie" type="text" onblur="overDatum()" placeholder="DD.MM.RRRR" id="narodenie" ><br>
+              <label for="vek">Vek</label><input name="vek" type="text" onblur="overVek()" placeholder="Zadajte vek" id="vek" ><br>
+              <label>Pohlavie</label>
+              muž<input name="pohlavie"  type="radio" onclick="overPohlavie()" id="muz">
+              žena<input name="pohlavie"  type="radio"  onclick="overPohlavie()" id="zena">
+              </p>
+              <h3>Aké druhy športu máte radi?</h3><br>
+              <p>
+              <label for="sport">Zvoľte druh športu:</label>
+              <select name="sport" onChange="vyber(this.selectedIndex)" size="1" id="sport">
+              <input type="radio" name="druh" id="letny">Letný
+              <input type="radio" name="druh" id="letny">Zimný
+              <option>Nemám rád šport</option>
+              </select><br>
+            </p>
+            <p>
+              <label for="konkretny">Zvoľte konkrétny šport:</label>
+              <select name="konkretny" size="1" id="konkretny"></select>
+            </p>
+              <p>
+
+                  <h4>Kde získavaš informácie potrebné k štúdiu?</h4><br>
+              <label for="internet">Internet</label>
+              <input type="checkbox" name="Zdroj" id="internet"><br>
+              <label for="knižnica">Knižnica</label>
+              <input type="checkbox" name="Zdroj" id="knižnica"><br>
+                  <label for="iné">Iné</label>
+              <input type="checkbox" name="Zdroj" id="iné">
+
+          <p>
+              Doplňujúce informácie<br><textarea name="info" placeholder="Napíšte o sebe nejaké športové skúsenosti"></textarea>
+          </p>
+      </form>
+      <script>
+          var sporty =  document.getElementById("konkretny");
+          var pole = new Array()
+          pole[0] = []
+          pole[1] = ["Futbal", "Plávanie", "Bicyklovanie"]
+          pole[2] = ["Hokej", "Lyžovanie", "Snowboarding"]
+      </script>
+          <p>
+              <button type="submit" form="form" value="post">Odoslať</button>
+              <button type="button" onclick="reset()" id="reset">Reset</button>
+          </p>
+
+
+            </article>
+    </body>
+</html>

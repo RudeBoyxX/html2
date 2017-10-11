@@ -1,0 +1,237 @@
+*{
+	margin:0;
+}
+body{
+	font-family: 'Encode Sans Expanded', sans-serif;
+	background: url('./img/back.jpg');
+}
+ul{
+	padding:1em 5em;
+	margin:0;
+
+}
+nav li a{
+	padding: 15px 30px;
+	color: black;
+	font-weight: bold;
+}
+nav li{
+	display: inline;
+	padding: 15.2px 0;
+	background-color: #C29155;
+}
+nav li a:hover{
+	color:black;
+}
+nav li:hover{
+	background: #FFBE70;
+}
+nav{
+	background: #A67C49;
+	width: 100%;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+article{
+	width:80%;
+	margin:auto;
+}
+h1{
+		font-size: 50px;
+		margin-top: 25px;
+		margin-left: 25px;
+		text-align: center;
+}
+
+article h3{
+		margin-top: 50px;
+		margin-left: 25px;
+}
+article img{
+	margin-top: 20px;
+	margin-left: 30px;
+	float: left;
+	margin-right: 25px;
+}
+
+article p{
+	margin-top: 20px;
+	margin-left: 28.5px;
+}
+
+article ul li{
+	list-style-type: square;
+}
+
+aside q{
+	display: inline-block;
+	float:right;
+	padding-bottom: 10px;
+	margin-right: 250px;
+	padding: 8px;
+	width:200px;
+	height:auto;
+	border: 1px dashed black;
+	border-radius: 5px;
+	border-width: 2.5px;
+	font-style: italic;
+}
+tr th{
+	font-size: 15px;
+	background: #8C6039;
+	border: 1px solid black;
+}
+tr td{
+	text-align:center
+}
+tr td.Prednaska{
+	background: #73462C;
+	border: 1px solid black;
+}
+tr td.Cviko{
+	background: #A67C49;
+	border: 1px solid black;
+}
+tr td.Den{
+	background: #8C6039;
+	border: 1px solid black;
+}
+tr td.Telesna{
+	background: #B5462C;
+	border: 1px solid black;
+}
+td,tr,th{
+	border: 1px solid black;
+}
+table{
+	margin:20px auto;
+	padding: 80px;
+	width: 85%;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+p{
+	padding-bottom:30px;
+}
+section ul li{
+	margin: 15px;
+}
+/*MAPA SLOVENSKA*/
+/*-----------------------------------------------------*/
+
+
+
+img.Mapa {
+	width: 1200px;
+	height: 800px;
+}
+img.BL{
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    top: 670px;
+    left: 95px;
+		position: absolute;
+		}
+img.KE{
+		    z-index: 3;
+		    width: 50px;
+		    height: 50px;
+				top: 485px;
+				left: 875.2px;
+				position: absolute;
+				}
+img.ZV{
+			z-index: 3;
+			width: 50px;
+			height: 50px;
+			top: 540px;
+			left: 477.8px;
+			position: absolute;
+		}
+img.BR{
+			z-index: 3;
+			width: 50px;
+			height: 50px;
+			top: 470px;
+			left: 572.5px;
+			position: absolute;
+		}
+
+
+.Ramik{
+  font-size: 12px;
+	color: white;
+	padding: 10px;
+  width: 300px;
+  z-index: 5;
+	position: absolute;
+	border: 2px solid black;
+	display: none;
+	border-radius: 7px;
+}
+img.BL:hover + .Ramik{
+	display: block;
+	top: 670px;
+	left: 150px;
+		height: 255px;
+	background-image: url('./img/ramik.jpeg');
+}
+img.KE:hover + .Ramik{
+	display: block;
+	top: 485px;
+	left: 930px;
+	height: 225px;
+	background-image: url('./img/ramik.jpeg');
+}
+img.ZV:hover + .Ramik{
+	display: block;
+	top: 540px;
+	left: 535px;
+	height: 210px;
+	background-image: url('./img/ramik.jpeg');
+}
+img.BR:hover + .Ramik{
+	display: block;
+	top: 470px;
+	left: 630px;
+	height: 250px;
+	background-image: url('./img/ramik.jpeg');
+}
+
+.BLimg{
+	float: right;
+}
+.ZVimg{
+	float: right;
+}
+.BRimg{
+	float: right;
+}
+.KEimg{
+	float: right;
+}
+
+
+
+@media (max-width:645px){
+	nav li a {
+    padding: 15px 10px;
+	}
+	h1{
+		font-size: 35px;
+	}
+}
+
+/*****************************************************/
+
+label{
+    width: 12em;
+    float: left;
+}
+.table{
+	font-size: 15px;
+}
